@@ -36,7 +36,8 @@ $(document).ready(function () {
         };
 
         eHp = eHp - playerDmg;
-        console.log("Enemy has " + Math.round(eHp) + " HP");
+        $("#enemyHp").html(Math.round(eHp));
+        // console.log("Enemy has " + Math.round(eHp) + " HP");
 
         if (eHp <= 0) {
             alert("Enemy dieded");
@@ -90,6 +91,7 @@ $(document).ready(function () {
     function enemyDoDamage() {
         let enemyDmg = (Math.random() * 10).toFixed(2);
 
+        $("#enemyDmg").html(enemyDmg);
         console.log(enemyDmg);
         if (enemyDmg >= 8 && enemyDmg <= 10) {
             console.log("CRITICAL on PLAYER");
@@ -102,6 +104,7 @@ $(document).ready(function () {
         };
 
         pHp = pHp - enemyDmg;
+        $("#playerHp").html(Math.round(pHp));
         console.log("You have " + Math.round(pHp) + " HP left");
 
         if (pHp <= 0) {
