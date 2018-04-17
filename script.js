@@ -23,6 +23,7 @@ $(document).ready(function () {
     function doDamage() {
         let playerDmg = (Math.random() * 10).toFixed(2);
         console.log(playerDmg);
+        $('#playerDmg').html(playerDmg);
 
         if (playerDmg >= 8 && playerDmg <= 10) {
             console.log("CRITICAL STRIKE ON ENEMY");

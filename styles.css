@@ -1,0 +1,27 @@
+body {
+    background-image: url("assets/images/bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.buttons {
+    position: relative;
+    left: 45%;
+    top: 10%;
+}
+
+.outputs {
+    background-color: white;
+    position: relative;
+    top: 50%;
+    max-width: 300px;
+    width: 100%;
+    left: calc(50% - 150px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.outputs p {
+    padding: 10px;
+}
